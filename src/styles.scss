@@ -1,0 +1,35 @@
+@use "@carbon/styles";
+@use "@carbon/styles/scss/grid/flexbox";
+
+/*
+ * Want to switch between themes? Add theme classes! Instead of applying theme directly to html/body tag,
+ * wrap your entire app in the below theme class in your entry point (app.component.html) 
+ */
+.white {
+  @include styles.theme(styles.$white);
+}
+
+.g10 {
+  @include styles.theme(styles.$g10);
+}
+
+.g90 {
+  @include styles.theme(styles.$g90);
+}
+
+.g100 {
+  @include styles.theme(styles.$g100);
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  // Just want a single theme, just include the theme in your body!
+  // Comment the code in app.component.ts for this to take effect
+
+  // @include styles.theme(styles.$g100);
+}
